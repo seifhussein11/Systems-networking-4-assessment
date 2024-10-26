@@ -1,0 +1,36 @@
+Event: Received a 1st DNS lookup request and sent a reply with The IP of the 1st request 
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 359 | Identifier: 22526 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: DNS | Checksum: 7276 | Source IP: 1.1.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   DNS REPLY //  Identification: 6424 | Flags: DNS reply | Question count: 1 | Answer count: 1 | Authority record count: 0 | Additional record count: 0 | Requested Name: http://www.gollum.mordor | Type : IPv4 | Class : Internet | Answer Name : http://www.gollum.mordor | Type : IPv4 | Class : Internet | TTL : 255 | Data Length : 4 | Address : 192.168.1.1 
+
+Event: Received a 2nd DNS lookup request and sent a reply with The IP of the 2nd request 
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 380 | Identifier: 44832 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: DNS | Checksum: 51159 | Source IP: 1.1.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   DNS REPLY //  Identification: 32227 | Flags: DNS reply | Question count: 1 | Answer count: 1 | Authority record count: 0 | Additional record count: 0 | Requested Name: http://rincewind.fourex.disc.atuin | Type : IPv4 | Class : Internet | Answer Name : http://rincewind.fourex.disc.atuin | Type : IPv4 | Class : Internet | TTL : 255 | Data Length : 4 | Address : 192.168.1.1 
+
+Event: Recieved an IP datagram with the SYN flag on and sent an Ethernet datagram with the SYN-ACK flag on
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 243 | Identifier: 52208 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 47230 | Source IP: 192.168.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   TCP SEGMENT //  Source Port: 80 | Destination Port: 8080 | Sequence number: 1604494609 | Acknowledgment number: 705991773 | Dataoffset: 5 | Control Flags: SYN-ACK | Window size: 65535 | Checksum: 5847 | Urg pointer: 0 | Options: 0 | NONE  
+
+Event: IP datagram holding 1st request data
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 421 | Identifier: 24557 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 39396 | Source IP: 192.168.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   TCP SEGMENT //  Source Port: 80 | Destination Port: 8080 | Sequence number: 1604494656 | Acknowledgment number: 705991954 | Dataoffset: 5 | Control Flags: PSH-ACK | Window size: 65535 | Checksum: 36221 | Urg pointer: 0 | Options: 0 | 
+HTTP/1.1 304 Not Modified
+Content Type: text/plain
+Last Modified: Wed, 24 Jan 2024 23:25:52 GMT
+Content Length: 59
+
+<html>
+<head><title>304 Not Modified</title></head>
+</html>  
+
+Event: IP datagram holding 2nd request data
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 492 | Identifier: 19743 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 60485 | Source IP: 192.168.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   TCP SEGMENT //  Source Port: 80 | Destination Port: 8080 | Sequence number: 1604494715 | Acknowledgment number: 705992206 | Dataoffset: 5 | Control Flags: PSH-ACK | Window size: 65535 | Checksum: 62560 | Urg pointer: 0 | Options: 0 | 
+HTTP/1.1 300 Multiple Choices
+Content Type: image/jpeg
+Content Length: 171
+
+<html>
+<head><title>300 Multiple Choices</title></head>
+<body>
+   <h1>300 Multiple Choices</h1>
+   <p>this document can be found in multiple locations.</p>
+</body>
+</html>  
+
+Event: Received an IP datagram with the FIN flag on and sent an IP datagram with the FIN-ACK flag on to close the connection
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 244 | Identifier: 28693 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 48321 | Source IP: 192.168.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   TCP SEGMENT //  Source Port: 80 | Destination Port: 8080 | Sequence number: 1604494717 | Acknowledgment number: 705992207 | Dataoffset: 5 | Control Flags: FIN-ACK | Window size: 65535 | Checksum: 30010 | Urg pointer: 0 | Options: 0 | NONE  

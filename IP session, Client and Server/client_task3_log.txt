@@ -1,0 +1,29 @@
+Event: Sent a 1st DNS lookup request
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 230 | Identifier: 47031 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: DNS | Checksum: 51965 | Source IP: 192.168.1.5 | Destination IP: 1.1.1.1 | Options: 0 |   DNS REQUEST //  Identification: 6424 | Flags: DNS lookup request | Question count: 1 | Answer count: 0 | Authority record count: 0 | Additional record count: 0 | Name: http://www.gollum.mordor | Type : IPv4 | Class : Internet 
+
+Event: Sent a 2nd DNS lookup request
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 241 | Identifier: 50029 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: DNS | Checksum: 42556 | Source IP: 192.168.1.5 | Destination IP: 1.1.1.1 | Options: 0 |   DNS REQUEST //  Identification: 32227 | Flags: DNS lookup request | Question count: 1 | Answer count: 0 | Authority record count: 0 | Additional record count: 0 | Name: http://rincewind.fourex.disc.atuin | Type : IPv4 | Class : Internet 
+
+Event: Sent a IP datgaram with the SYN flag on
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 231 | Identifier: 56130 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 35502 | Source IP: 192.168.1.5 | Destination IP: 192.168.1.1 | Options: 0 |   TCP SEGMENT //  Source Port: 8080 | Destination Port: 80 | Sequence number: 705991772 | Acknowledgment number: 0 | Dataoffset: 5 | Control Flags: SYN | Window size: 65535 | Checksum: 29707 | Urg pointer: 0 | Options: 0 | NONE  
+
+Event: Received an IP datagram with the SYN-ACK flag on and sent an IP datagram having the ACK flag on to acknowledge it
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 240 | Identifier: 41564 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 48255 | Source IP: 192.168.1.5 | Destination IP: 192.168.1.1 | Options: 0 |   TCP SEGMENT //  Source Port: 8080 | Destination Port: 80 | Sequence number: 705991773 | Acknowledgment number: 1604494610 | Dataoffset: 5 | Control Flags: ACK | Window size: 65535 | Checksum: 46081 | Urg pointer: 0 | Options: 0 | NONE  
+
+Event: Sent a 1st request IP datagram that has the HTTP request
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 287 | Identifier: 19019 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 24926 | Source IP: 192.168.1.5 | Destination IP: 192.168.1.1 | Options: 0 |   TCP SEGMENT //  Source Port: 8080 | Destination Port: 80 | Sequence number: 705991773 | Acknowledgment number: 1604494656 | Dataoffset: 5 | Control Flags: PSH-ACK | Window size: 65535 | Checksum: 15923 | Urg pointer: 0 | Options: 0 | HEAD ring.txt HTTP/1.1\ Host: www.gollum.mordor  
+
+Event: Recieved a response for 1st request and sent a IP packet with the ACK flag on to confirm it
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 240 | Identifier: 27533 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 17908 | Source IP: 192.168.1.5 | Destination IP: 192.168.1.1 | Options: 0 |   TCP SEGMENT //  Source Port: 8080 | Destination Port: 80 | Sequence number: 705991954 | Acknowledgment number: 1604494657 | Dataoffset: 5 | Control Flags: ACK | Window size: 65535 | Checksum: 46370 | Urg pointer: 0 | Options: 0 | NONE  
+
+Event: Sent a 2nd request IP datagram that has the HTTP request
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 299 | Identifier: 49418 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 20983 | Source IP: 192.168.1.5 | Destination IP: 192.168.1.1 | Options: 0 |   TCP SEGMENT //  Source Port: 8080 | Destination Port: 80 | Sequence number: 705991954 | Acknowledgment number: 1604494715 | Dataoffset: 5 | Control Flags: PSH-ACK | Window size: 65535 | Checksum: 58702 | Urg pointer: 0 | Options: 0 | GET wizzard.jpg HTTP/1.1\ Host: rincewind.fourex.disc.atuin  
+
+Event: Recieved a response for 2nd request and sent a IP packet with the ACK flag on to confirm it
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 240 | Identifier: 2007 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 2361 | Source IP: 192.168.1.5 | Destination IP: 192.168.1.1 | Options: 0 |   TCP SEGMENT //  Source Port: 8080 | Destination Port: 80 | Sequence number: 705992206 | Acknowledgment number: 1604494716 | Dataoffset: 5 | Control Flags: ACK | Window size: 65535 | Checksum: 20645 | Urg pointer: 0 | Options: 0 | NONE  
+
+Event: Sent an IP datgaram with the FIN flag on to close the connection
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 240 | Identifier: 47877 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 11846 | Source IP: 192.168.1.5 | Destination IP: 192.168.1.1 | Options: 0 |   TCP SEGMENT //  Source Port: 8080 | Destination Port: 80 | Sequence number: 705992206 | Acknowledgment number: 1604494717 | Dataoffset: 5 | Control Flags: FIN | Window size: 65535 | Checksum: 30336 | Urg pointer: 0 | Options: 0 | NONE  
+
+Event: Received an IP datagram with the FIN-ACK flag on and sent an IP datagram with the ACK flag on  to acknowledge it and close the connection
+Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 240 | Identifier: 58781 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 39666 | Source IP: 192.168.1.5 | Destination IP: 192.168.1.1 | Options: 0 |   TCP SEGMENT //  Source Port: 8080 | Destination Port: 80 | Sequence number: 705992207 | Acknowledgment number: 1604494718 | Dataoffset: 5 | Control Flags: ACK | Window size: 65535 | Checksum: 44647 | Urg pointer: 0 | Options: 0 | NONE  
