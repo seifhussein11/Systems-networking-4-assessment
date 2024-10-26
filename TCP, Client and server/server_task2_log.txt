@@ -1,0 +1,38 @@
+Event: Received a 1st DNS lookup request and sent a reply with The IP of the 1st request 
+Identification: 56344 | Flags: DNS reply | Question count: 1 | Answer count: 1 | Authority record count: 0 | Additional record count: 0 | Requested Name: localhost | Type : IPv4 | Class : Internet | Answer Name : localhost | Type : IPv4 | Class : Internet | TTL : 255 | Data Length : 4 | Address : 192.168.1.1
+
+Event: Recieved a TCP packet with SYN flag on and sent a TCP segment contaning a SYN-ACK
+Source Port: 80 | Destination Port: 8080 | Sequence number: 1320075445 | Acknowledgment number: 2597198706 | Dataoffset: 5 | Control Flags: SYN-ACK | Window size: 65535 | Checksum: 17657 | Urg pointer: 0 | Options: 0 | NONE 
+
+Event: TCP segment holding 1st request data
+Source Port: 80 | Destination Port: 8080 | Sequence number: 1320075485 | Acknowledgment number: 2597199047 | Dataoffset: 5 | Control Flags: PSH-ACK | Window size: 65535 | Checksum: 38016 | Urg pointer: 0 | Options: 0 | 
+HTTP/1.1 301 Moved Permanently
+Location: 192.168.1.1/new_ring.txt
+Content Type: text/plain
+Content Length: 223
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+   <h1>301 Moved Permanently</h1>
+   <p>this page has moved to <a href=http://192.168.1.1/new_ring.txt>http://192.168.1.1/new_ring.txt</a>.</p>
+</body>
+</html> 
+
+Event: TCP segment holding 2nd request data
+Source Port: 80 | Destination Port: 8080 | Sequence number: 1320075529 | Acknowledgment number: 2597199388 | Dataoffset: 5 | Control Flags: PSH-ACK | Window size: 65535 | Checksum: 11294 | Urg pointer: 0 | Options: 0 | 
+HTTP/1.1 302 Found
+Location: 192.168.1.1/temporary_wizzard.jpg
+Content Type: image/jpeg
+Content Length: 226
+
+<html>
+<head><title>302 Found</title></head>
+<body>
+   <h1>302 Found</h1>
+   <p>this document is temporarily at <a href=http://192.168.1.1/temporary_wizzard.jpg>http://192.168.1.1/temporary_wizzard.jpg</a>.</p>
+</body>
+</html> 
+
+Event: Received a TCP segment with FIN flag on and sent TCP with FIN-ACK to close the connection
+Source Port: 80 | Destination Port: 8080 | Sequence number: 1320075531 | Acknowledgment number: 2597199389 | Dataoffset: 5 | Control Flags: FIN-ACK | Window size: 65535 | Checksum: 30911 | Urg pointer: 0 | Options: 0 | NONE 

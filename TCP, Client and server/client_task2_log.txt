@@ -1,0 +1,26 @@
+Event: Sent a 1st DNS lookup request
+Identification: 56344 | Flags: DNS lookup request | Question count: 1 | Answer count: 0 | Authority record count: 0 | Additional record count: 0 | Name: localhost | Type : IPv4 | Class : Internet
+
+Event: Sent a tcp packet with the SYN flag on 
+Source Port: 8080 | Destination Port: 80 | Sequence number: 2597198705 | Acknowledgment number: 0 | Dataoffset: 5 | Control Flags: SYN | Window size: 65535 | Checksum: 55376 | Urg pointer: 0 | Options: 0 | NONE 
+
+Event: Recieved a TCP packet with the SYN-ACK and sent a TCP segment with an ACK to confirm it
+Source Port: 8080 | Destination Port: 80 | Sequence number: 2597198706 | Acknowledgment number: 1320075446 | Dataoffset: 5 | Control Flags: ACK | Window size: 65535 | Checksum: 64806 | Urg pointer: 0 | Options: 0 | NONE 
+
+Event: Sent a 1st request TCP segment that has the HTTP request
+Source Port: 8080 | Destination Port: 80 | Sequence number: 2597198706 | Acknowledgment number: 1320075485 | Dataoffset: 5 | Control Flags: PSH-ACK | Window size: 65535 | Checksum: 32212 | Urg pointer: 0 | Options: 0 | GET ring.txt HTTP/1.1\ Host: 192.168.1.1 
+
+Event: Recieved a response for 1st request and sent a TCP segment with the ACK flag on to confirm it
+Source Port: 8080 | Destination Port: 80 | Sequence number: 2597199047 | Acknowledgment number: 1320075486 | Dataoffset: 5 | Control Flags: ACK | Window size: 65535 | Checksum: 40107 | Urg pointer: 0 | Options: 0 | NONE 
+
+Event: Sent a 2nd request TCP segment that has the HTTP request
+Source Port: 8080 | Destination Port: 80 | Sequence number: 2597199047 | Acknowledgment number: 1320075529 | Dataoffset: 5 | Control Flags: PSH-ACK | Window size: 65535 | Checksum: 8545 | Urg pointer: 0 | Options: 0 | HEAD wizzard.jpg HTTP/1.1\ Host: 192.168.1.1 
+
+Event: Recieved a response for 2nd request and sent a TCP segment with the ACK flag on to confirm it
+Source Port: 8080 | Destination Port: 80 | Sequence number: 2597199388 | Acknowledgment number: 1320075530 | Dataoffset: 5 | Control Flags: ACK | Window size: 65535 | Checksum: 60977 | Urg pointer: 0 | Options: 0 | NONE 
+
+Event: Sent a TCP segment with FIN flag on to close the connection
+Source Port: 8080 | Destination Port: 80 | Sequence number: 2597199388 | Acknowledgment number: 1320075531 | Dataoffset: 5 | Control Flags: FIN | Window size: 65535 | Checksum: 16115 | Urg pointer: 0 | Options: 0 | NONE 
+
+Event: Recieved a TCP segment with FIN-ACK flag and sent a TCP segment with ACK flag to close the connection
+Source Port: 8080 | Destination Port: 80 | Sequence number: 2597199389 | Acknowledgment number: 1320075532 | Dataoffset: 5 | Control Flags: ACK | Window size: 65535 | Checksum: 51682 | Urg pointer: 0 | Options: 0 | NONE 
