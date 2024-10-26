@@ -1,0 +1,6 @@
+Event: Sent a 1st request HTTP request to server
+GET ring.txt HTTP/1.1\ Host: localhost
+
+Event: Sent a 2nd request  HTTP request to server
+HEAD wizzard.jpg HTTP/1.1\ Host: localhost
+
