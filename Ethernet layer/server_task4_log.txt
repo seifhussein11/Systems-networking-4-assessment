@@ -1,0 +1,50 @@
+Event: Received a DNS lookup request and sent a reply with The IP of the 1st request 
+ Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 360 | Identifier: 31483 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: DNS | Checksum: 60778 | Source IP: 1.1.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   DNS REPLY //  Identification: 43320 | Flags: DNS reply | Question count: 1 | Answer count: 1 | Authority record count: 0 | Additional record count: 0 | Requested Name: http://www.gollum.mordor | Type : IPv4 | Class : Internet | Answer Name : http://www.gollum.mordor | Type : IPv4 | Class : Internet | TTL : 255 | Data Length : 4 | Address : 192.168.1.1 
+
+Event: Received a DNS lookup request and sent a reply with The IP of the 2nd request 
+ Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 380 | Identifier: 22302 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: DNS | Checksum: 43220 | Source IP: 1.1.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   DNS REPLY //  Identification: 15732 | Flags: DNS reply | Question count: 1 | Answer count: 1 | Authority record count: 0 | Additional record count: 0 | Requested Name: http://rincewind.fourex.disc.atuin | Type : IPv4 | Class : Internet | Answer Name : http://rincewind.fourex.disc.atuin | Type : IPv4 | Class : Internet | TTL : 255 | Data Length : 4 | Address : 192.168.1.1 
+
+Event: Sent an ARP reply to the client
+Destination MAC: 02:1A:2B:3C:4D:5E | Source Mac: 02:BA:CE:FA:CE:12 | EtherType: IPv4 |   ARP REPLY // Hardware type: Ethernet (1) | Protocol type: IPv4 | Hardware size: 6 | Protocol size: 4 | Opcode: Reply (2) | Sender Mac: 02:BA:CE:FA:CE:12 | Sender IP: 192.168.1.1 | Target Mac: 02:1A:2B:3C:4D:5E | Target IP: 192.168.1.5/// | CRC: 3323300894
+
+Event: Recieved an Ethernet frame with the SYN flag on and sent an Ethernet frame with the SYN-ACK flag on
+Destination MAC: 02:1A:2B:3C:4D:5E | Source Mac: 02:BA:CE:FA:CE:12 | EtherType: IPv4 |   IP DATAGRAM // Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 246 | Identifier: 56795 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 62625 | Source IP: 192.168.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   TCP SEGMENT //  Source Port: 80 | Destination Port: 8080 | Sequence number: 1283941430 | Acknowledgement number: 3489800396 | Dataoffset: 5 | Control Flags: SYN-ACK | Window size: 65535 | Checksum: 34158 | Urg pointer: 0 | Options: 0 | NONE  /// | CRC: 2320962245
+
+Event: Ethernet frame holding 1st request data
+Destination MAC: 02:1A:2B:3C:4D:5E | Source Mac: 02:BA:CE:FA:CE:12 | EtherType: IPv4 |   IP DATAGRAM // Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 514 | Identifier: 6858 | Flags: 001 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 62317 | Source IP: 192.168.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   TCP SEGMENT //  Source Port: 80 | Destination Port: 8080 | Sequence number: 1283941476 | Acknowledgement number: 3489800734 | Dataoffset: 5 | Control Flags: PSH-ACK | Window size: 65535 | Checksum: 15973 | Urg pointer: 0 | Options: 0 | 
+HTTP/1.1 303 See Other
+Location: www.gollum.mordor/other_ring.txt
+Content Type: text/plain
+Content Length: 220
+
+<html>
+<head><title>303 See Other</title></head>
+<body>
+   <h1>303 See Other</h1>
+   <p>this document is at <a href=http://www.gollum.mordor/other_ring.txt /// | CRC: 2961246302
+
+Event: Ethernet frame holding 1st request data
+Destination MAC: 02:1A:2B:3C:4D:5E | Source Mac: 02:BA:CE:FA:CE:12 | EtherType: IPv4 |   IP DATAGRAM // Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 86 | Identifier: 6858 | Flags: 000 | Fragmented offset: 61 | TTL: 255 | Protocol: TCP | Checksum: 22821 | Source IP: 192.168.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   TCP SEGMENT // >http://www.gollum.mordor/other_ring.txt</a>.</p>
+</body>
+</html>  /// | CRC: 1339450287
+
+Event: Ethernet frame holding 2nd request data
+Destination MAC: 02:1A:2B:3C:4D:5E | Source Mac: 02:BA:CE:FA:CE:12 | EtherType: IPv4 |   IP DATAGRAM // Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 514 | Identifier: 51477 | Flags: 001 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 16603 | Source IP: 192.168.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   TCP SEGMENT //  Source Port: 80 | Destination Port: 8080 | Sequence number: 1283941534 | Acknowledgement number: 3489801111 | Dataoffset: 5 | Control Flags: PSH-ACK | Window size: 65535 | Checksum: 3116 | Urg pointer: 0 | Options: 0 | 
+HTTP/1.1 303 See Other
+Location: rincewind.fourex.disc.atuin/other_wizzard.jpg
+Content Type: image/jpeg
+Content Length: 246
+
+<html>
+<head><title>303 See Other</title></head>
+<body>
+   <h1>303 See Other</h1>
+   <p>this document is at <a href=http://rincewind.fourex.dis /// | CRC: 107244826
+
+Event: Ethernet frame holding 2nd request data
+Destination MAC: 02:1A:2B:3C:4D:5E | Source Mac: 02:BA:CE:FA:CE:12 | EtherType: IPv4 |   IP DATAGRAM // Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 124 | Identifier: 51477 | Flags: 000 | Fragmented offset: 61 | TTL: 255 | Protocol: TCP | Checksum: 57907 | Source IP: 192.168.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   TCP SEGMENT // c.atuin/other_wizzard.jpg>http://rincewind.fourex.disc.atuin/other_wizzard.jpg</a>.</p>
+</body>
+</html>  /// | CRC: 663307465
+
+Event: Received an Ethernet frame with the FIN flag on  and sent Ethernet frame with the FIN-ACK flag on to close the connection
+Destination MAC: 02:1A:2B:3C:4D:5E | Source Mac: 02:BA:CE:FA:CE:12 | EtherType: IPv4 |   IP DATAGRAM // Version: IPv4 | Length: 5 | Type of service: 0 | Total length: 245 | Identifier: 60535 | Flags: 000 | Fragmented offset: 0 | TTL: 255 | Protocol: TCP | Checksum: 21108 | Source IP: 192.168.1.1 | Destination IP: 192.168.1.5 | Options: 0 |   TCP SEGMENT //  Source Port: 80 | Destination Port: 8080 | Sequence number: 1283941536 | Acknowledgement number: 3489801112 | Dataoffset: 5 | Control Flags: FIN-ACK | Window size: 65535 | Checksum: 5804 | Urg pointer: 0 | Options: 0 | NONE  /// | CRC: 3192142961
